@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <img id="logoHeader" src="images/logo4.png" alt="Logo" width="60px" height="auto">
+        <h1>Smith Horizon Realty Inc.</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="homepage.html" class="visited">Home</a></li>
+            <li><a href="activeListings.html">Active Listings</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ol>
+    </nav>
+    <main>
+        <h2 id="contactH2">
+            Contact us for your Dream Home
+        </h2>
+        <form method="post" action="mailto:smith@horizonrealty.ca">
+            <div class="form-row">
+                <label for="contact_name">Your Name:</label>
+                <input type="text" id="contact_name" name="contact_name">
+            </div>
+        
+            <div class="form-row">
+                <label for="contact_phone">Your Phone Number:</label>
+                <input type="tel" id="contact_phone" name="contact_phone">
+            </div>
+        
+            <div class="form-row">
+                <label for="contact_email">Your Email:</label>
+                <input type="email" id="contact_email" name="contact_email">
+            </div>
+        
+            <fieldset>
+                <legend>Property Preferences</legend>
+            
+                <div class="form-row">
+                    <label for="contact_property_type">Your Preferred Property Type:</label>
+                    <select name="contact_property_type" id="contact_property_type">
+                        <option value="RV">RV</option>
+                        <option value="Tiny House">Tiny House</option>
+                        <option value="Condominum">Condominium</option>
+                        <option value="Townhouse">Townhouse</option>
+                        <option value="Detached">Detached</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label for="contact_property_rooms">Number of Rooms:</label>
+                    <select name="contact_property_rooms" id="contact_property_rooms">
+                        <option value="0">Studio</option>
+                        <option value="1">One Room</option>
+                        <option value="2">Two Rooms</option>
+                        <option value="3">Three Rooms</option>
+                        <option value="4">Four Rooms</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label for="contact_property_toilets">Number of Bathrooms:</label>
+                    <select name="contact_property_toilets" id="contact_property_toilets">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+            
+                <div class="form-row">
+                    <label for="contact_budget">Budget: $</label>
+                    <input type="number"  name="contact_budget"  id="contact_budget"  value="600000" min="100000" max="10000000" step="100000"> 
+                </div>
+            
+                <div class="form-row">
+                    <label for="contact-comments">Other Comments:</label>
+                    <textarea id="contact-comments" name="contact-comments" rows="4" cols="100">Please enter any other comments you may have here.</textarea>
+                </div>
+            </fieldset> 
+        
+            <div class="form-row">
+                <input type="submit" name="Submit" id="submit" value="Submit">
+                <input type="reset" name="Reset" id="reset" value="Reset">
+            </div>
+        
+        </form>
+    </main>
+    <aside>
+        <img id="imageplaceholder" src="images/real_estate_agent.jpg" alt="img placeholder" width="80%" height="auto">
+        <p>Phone: <a href="tel:+1234567890">(437) 546-7790</a></p>
+        <p>Email: <a href="mailto:smith@horizonrealty.ca">smith@horizonrealty.ca</a></p>
+    </aside>
+    <footer>
+        <p id="footerpa"><a href="https://mdesign.pe/" target="_blank">mdesign.pe</a> 2023.</p>
+    </footer>
+
+</body>
+
+</html>
